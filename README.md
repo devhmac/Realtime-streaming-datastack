@@ -4,3 +4,8 @@ Python ENV 3.10.9
 
 init
 `source venv/bin/activate`
+
+## stack
+
+- Airflow
+  -Kafka

@@ -23,10 +23,11 @@ def format_data(res):
   data['first_name'] = res['name']['first']
   data['last_name'] = res['name']['last']
   data['gender'] = res['gender']
-  data['address'] = str(res['location']["street"]["number"]) + ' '+ res['location']["street"]["name"]+', ' + res['location']["city"] + ', ' +  res['location']["state"] + ', ' + res['location']["country"]
+  data['address'] = str(res['location']["street"]["number"])+' '+ res['location']["street"]["name"]+', ' + res['location']["city"] + ', ' +  res['location']["state"] + ', ' + res['location']["country"]
   data['postal_code'] = res['location']['postcode']
   data['username'] = res['login']['username']
   data['email'] = res['email']
+  data['picture'] = res['picture']['medium']
   
   return data
 
